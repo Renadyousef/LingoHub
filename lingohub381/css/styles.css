@@ -1,0 +1,1618 @@
+
+html{
+  font-family:Arial, sans-serif;
+  height: 100%;
+  box-sizing: border-box;
+}
+body{
+position: relative;
+margin: 0;
+min-height: 100%;
+    display: flex ;
+    flex-direction: column;
+    min-height: 100%;
+    padding-bottom: 6.74rem;
+    box-sizing: inherit;
+}
+
+/* header layout */
+/* new css from renad Start*/
+/* to add star at the end of ur form input label and the red note preseding it*/
+.redNote{
+  color: #ff7f7f !important; 
+  margin: 2px !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+
+}
+.required:after {
+  content:" *" !important;
+  color: red !important;
+}
+/* CSS stars apend adopted from:
+ https://stackoverflow.com/questions/11197671/use-css-to-automatically-add-required-field-asterisk-to-form-inputs */
+
+/*for checking if an input is empty in post request page*/
+empty{
+  border:1px solid red  !important;
+
+}
+/* new css end */
+header  {
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  padding: 20px; 
+  width:100%;
+}
+/* تسيق الروابط والازرار واللست */
+a,li, button{
+  font-weight: lighter;
+  font-size: medium;
+  color: #353535;
+  text-decoration: none;
+}
+
+.accept {
+  font-weight: lighter;
+  font-size: medium;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #20bf55;
+  color: rgb(53, 53, 53);
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  width: 120px;
+}
+
+
+/* Style reject button */
+.reject {
+  font-weight: lighter;
+  font-size: medium;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 12px;
+  background-color:#d73046;
+  color: rgb(53, 53, 53);
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  width: 120px;
+}
+
+.logo{
+  cursor: pointer;
+  margin-right: auto;
+ margin-top: 30px;
+ height: 200px;
+}
+.nav_bar {
+  list-style: none;
+}
+
+.nav_bar li {
+  display: inline-block;
+  padding: 0px 20px;
+  background: none;
+}
+
+.nav_bar li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_bar li a:hover {
+  color: #c7d3e1;
+  transition: 0.5s;
+}
+
+.nav_bar .booking-list li{
+  display: block;
+}
+
+.nav_bar .booking-list ul{
+  display: none;
+}
+
+.item-hover:hover {
+  display: block;
+}
+/*   signin button */
+button {
+  padding: 5px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  background-color: #7C93C3;
+  text-align: center;
+  display: inline;
+}
+button:hover ,#Edit_profileB:hover,#delete_profileB:hover{
+  background-color: #c7d3e1;
+} 
+
+/* end of header layout */
+
+
+/* footer layout */
+/* footer layout */
+footer{
+  text-align: center;
+  text-transform: uppercase;
+  padding: 35px;
+
+  position:absolute;
+  left:0;
+  right:0;
+  margin-top: auto;
+  background: #7C93C3;
+  color: #353535;
+  height: 138px;
+  bottom: 0;
+  width: 100%;
+ 
+}
+.icons h4{
+  top:-11px;
+  position: relative;
+}
+.icons a {
+  background: #7C93C3   ;
+  color: #a1a8b0;
+  padding: 10px;
+  top:-7px;
+  position: relative;
+}
+ 
+ 
+.icons  a:hover{
+  color: #c7d3e1 ;
+  transition: 0.5s;
+}
+ 
+   
+    .tableF {
+    
+      width: 100%;
+
+    }
+    
+    .tableF a {
+      
+      text-decoration: none;
+      color: #353535;
+
+    }
+    
+.tableF th{
+  position: relative;
+  top:-17px ;
+  margin-top: 120px;
+  width:10%;
+  
+}
+/* end of footer layout */
+
+/*learnerhomepage + partnerhomepage  */
+#Homepage{ 
+  position: absolute;
+  background: none;
+padding-top: 100px;
+padding-right: 50px;
+margin : 5% ; 
+} 
+#footerheader{
+  background: none;
+  background: linear-gradient(120deg, #7C93C3, #9eb8d9, #EEF5FF);
+  height: 60px;
+  padding: 0;  
+}
+#LearnerHPage, #PartnerHPage{
+  position: relative;
+  background: none;
+  background: linear-gradient(120deg, #7C93C3, #9eb8d9, #EEF5FF);
+  height: 150px;
+  z-index: 9999;
+   
+}
+#contentOfPartner,#contentOfLearner{ 
+  position: absolute;
+  background: none;
+padding-top: 100px;
+padding-right: 50px;
+
+} 
+
+.Slogan {  
+padding-top: 63px;
+  margin: 72px; 
+  margin-bottom: 10px;
+  color: #353535 ; 
+  font-size: 1.4cm;
+  background: none;
+
+}
+.Slogantext {  
+
+  padding: 10px; 
+  color:#383737; 
+  font-size: 0.5cm;
+  padding-left: 100px;
+  margin-bottom: 10px;
+  background: none;
+
+}
+
+ /************Manage profile**************/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  list-style: none;
+  font-family:Arial, sans-serif;
+}
+/************ body format ***************/
+.ManageProfileBody{
+  position: relative;
+  margin-top: 230px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 800px;
+  height: 420px;
+  display: flex;
+  box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+  border-radius: 20px;
+} 
+
+
+.ManageProfileBody .left ,.ManageProfileBody #DeleteProfile{
+  width: 60%;
+  background: #EEF5FF;
+  padding: 30px 25px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  text-align: center;
+  color: #353535;
+}
+
+.ManageProfileBody .left img{
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 120px;
+  
+ } /**************img format*********** */
+
+ .ManageProfileBody .right ,.ManageProfileBody #DeleteProfile{
+  width: 150%;
+  background: #fff;
+  padding: 30px 30px; 
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: #353535;
+  
+
+}
+
+#deletepic{
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 70px;
+  margin-left: 345px;
+ 
+
+}
+#personal-picLabel{
+display: block;
+width: 70px;
+background-color: #c7d3e1;
+color:#353535 ;
+padding: 1px;
+margin: 5px auto;
+border-radius: 5px;
+font-size: 10px;
+font-weight: bold;
+
+}
+#personal-pic{
+  display: none;
+}
+
+.ManageProfileBody  .right h3{
+    margin-bottom: 15px; 
+    padding-bottom: 5px; 
+    border-bottom: 1px solid #e0e0e0;
+    color: #353535;
+    text-transform: uppercase; 
+  }
+
+
+  .ManageProfileBody .right .info_data
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ManageProfileBody .right .info_data .data{
+  width: 45%;
+}
+
+.ManageProfileBody .right .info_data .data p{
+    color: #8e9aaf;
+    margin-bottom: 10px;
+   } 
+   .ManageProfileBody .right .info_data .data input{
+    color: #8e9aaf;
+    margin-bottom: 10px;
+   } 
+.ManageProfileBody .right ul , #signin {
+  margin-top: 20px;
+  margin-left: 100px;
+ 
+}
+.ManageProfileBody .right #delete 
+ {
+  margin-top: 120px;
+  margin-left: 275px;
+
+}
+.ManageProfileBody .right #learnerProfilbutton
+{
+  margin-top: 140px;
+}
+
+#password_deleteaccount{
+  margin-top: 20px;
+  width: 75%;
+  margin-left:100px ;
+}
+#delet_acc{
+  margin-left:100px ;
+}
+
+
+
+ /* to make our lonks leading to edit and delete page look like buttons */
+ .right ul li {
+            display: inline-block;
+            padding: 6px 12px;
+            left:50%;
+            background-color: #c7d3e1;
+            color: #353535;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 120px;
+            text-align: center;
+        }
+          .textMultiline{
+            width: 250px;
+           } 
+
+         .right ul li:hover {
+          background-color: #7C93C3; /* Hover effect */}
+        .textMultiline{
+            width: 250px;
+           } 
+     /* ****************** buttun format ****************/
+
+
+/* start of about us layout */
+.mainsec {
+  width: 90%;
+  margin: 60px auto;
+  background: #EEF5FF;
+  padding: 60px 30px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: #353535;
+}
+.aboutPar , .mainsec h2{
+  font-size: 25px;
+}
+#aul {
+  list-style: disc;
+ 
+}
+
+.insideAbout {
+  font-size: 10px;
+}
+
+/* ViewRateAndReviews */
+
+.Rate{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.checked {
+  color: orange;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.unchecked {
+  color: grey;
+}
+.outerDiv{
+
+  margin-bottom: 40px;
+}
+.SubDiv {
+  display: block;
+  margin-top: 12px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color:#EEF5FF;
+  margin-bottom: 10px;
+  padding: 20px 10px 10px 10px;
+}
+
+.innerDiv {
+  margin-left: 10px;
+  margin-top: 5px;
+  position: relative;
+  padding: 10px 10px 10px 10px;
+}
+
+.userImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+.Reviewers {
+  vertical-align: top;
+  line-height: 35px;
+  margin-left: 10px;
+}
+
+.date {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  text-align: right;
+}
+
+
+/* ***************************************************************************** *
+
+
+/* Style session cards */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.session-info {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 0px solid silver;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 285px;
+  margin: 20px;
+  display: inline-block;
+}
+
+.session-info img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  position: relative;
+  margin-right: 0px;
+}
+
+/* Style flag icon */
+.session-info .fi {
+  width: 40px;
+  height: 30px;
+  border-radius: 0%;
+  margin-bottom: 20px;
+  margin: 10px;
+  object-fit: cover;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* style info labels */
+.session-partner-label,
+.session-learner-label,
+.session-language-label,
+.session-date-label,
+.session-time-label
+,.session-price-label,
+ .partner-details-bio-label  , .partner-details-language-label
+, .partner-details-lable 
+{
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+  color: #353535;
+
+}
+
+/* style info */
+.session-partner,
+.session-learner,
+.session-language,
+.session-date,
+.session-time  .session-price,
+.partner-details-bio ,
+.partner-details-language
+.partner-details
+{
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #353535;
+  margin-left: 10px;
+}
+
+
+/* style button containers for all session pages */
+.button-container1 {
+  position: relative;
+  bottom: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.button-container2 {
+  position: relative;
+  bottom: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.button-container2 button {
+  margin-right: 10px;
+}
+
+/* Style contact button */
+.contact {
+  font-weight: lighter;
+  font-size: medium;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: rgb(199, 211, 225);
+  color: rgb(53, 53, 53);
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  width: 120px;
+}
+
+.contact:hover {
+  background-color: #7C93C3;
+}
+
+/* Style review button */
+.buttonreview {
+  font-weight: lighter;
+  font-size: medium;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: rgb(199, 211, 225);
+  color: rgb(53, 53, 53);
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  width: 120px;
+}
+
+.buttonreview:hover {
+  background-color: #7C93C3;
+}
+
+/* h2 style for session pages */
+
+#h2session {
+  text-align: center;
+  margin: 3px;
+  text-transform: uppercase;
+  color: #353535;
+}
+
+/**************** end of all 4 session pages*******************/
+
+
+
+/****************start of Leave a review page *******************/
+
+/* leave a review box ((left+right)) */
+.contentrate {
+  position: relative;
+  margin-top: 250px; 
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  box-shadow: 0 1px 20px 0 rgba(69, 90, 100, .08);
+}
+
+/* leave a review h2 ((left+right)) */
+.contentrate h2 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #353535;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/*image side formatting ((left side)) */
+.image-container {
+  width: 27%;
+  background: #EEF5FF;
+  padding: 30px 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+
+  text-align: center;
+  color: #353535;
+}
+/* image formatting((left side)) */
+.image-container img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+/* text formatting((left side)) */
+.partner-reviewed,
+.image-container p {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #353535;
+}
+
+/*form formatting ((right side)) */
+.form-container {
+  width: 73%;
+  background: #fff;
+  padding: 30px 30px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  align-items:center;
+  margin-left: auto;
+  color: #353535;
+}
+
+/*form group for each label+input ((right side)) */
+.form-group {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content:space-between;
+}
+
+/*form label formatting ((right side)) */
+.form-group label {
+  font-weight: bold;
+  color: #353535;
+}
+
+/* stars rating ((right side))*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+  position: absolute;
+  top: -9999px;
+}
+
+.rate:not(:checked)>label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+  content: '★ ';
+}
+
+.rate>input:checked~label {
+  color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+  color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+  color: #c59b08;
+}
+
+/* fixing textarea space ((right side))  */
+.form-group textarea {
+  height: 50px;
+  width: 200px;
+  display: block;
+}
+
+/* submit button formatting ((right side))*/
+ #submit-btn {
+
+  font-weight: lighter;
+  font-size: medium;
+  padding: 6px 12px;
+  background-color: #20bf55;
+  color: rgb(53, 53, 53);
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  display: block;
+  margin-top: 25px;
+  margin-left: 180px;
+
+} 
+
+/* submit button hover ((right side))*/
+#submit-btn:hover {
+  background-color: #86d7a1;
+}
+
+/**************** end of Leave a review page *******************/
+/* ********** contact us layout *************** */
+.Form {
+  display: block;
+  width: 800px;
+  height: 780px;
+  background: rgb(248, 250, 219);
+  padding: 20px;
+  margin: 8% auto 0;
+  text-align: center;
+  border-style: solid;
+  border-radius: 25px;
+  font-size: 19px;
+  color: rgb(0, 111, 96);
+  border-color: black;
+}
+form {
+  color:#353535;
+}
+.FLabel {
+  display: block;
+  
+  padding-top: 15px;
+  padding-bottom: 2px;
+  text-align: left;
+   margin-left: 210px;
+  font-size: 21px;
+  color: #353535;
+  font-weight: 500;
+}
+.biocon {
+  height: 250px;
+  width: 751px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-color: #c7d3e1;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border-radius: 10px;
+  padding: 0.375rem 0.75rem;
+  /* border: 1px solid #ced4da; */
+  overflow: auto;
+  font-weight: 650;
+  margin-left: 200px;
+}
+#context{
+height: 34px;
+width: 65%;
+border-radius: 4px;
+background-color: white;
+border: 1px solid gainsboro;
+padding: 7px 4px;
+/* margin-left: 150px; */
+}
+/* /////////////////////////////// */
+#loginbody{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(120deg,  #879fd1 , #9eb8d9 , #eef5ff);
+  }
+.containersign {
+  position: relative;
+  width: 60vw;
+  height: 80vh;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin-top: 50px;
+  }
+  .containersign::before { /*****الجزء اليمين */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 125%;
+  height: 100%;
+  background:linear-gradient(120deg, #7C93C3, #9eb8d9,#EEF5FF);
+  z-index: 6;
+  transform: translateX(100%);
+  transition: 1s ease-in-out;
+  }
+  .signin-signup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 5;
+  }
+  .sign-in-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  padding: 0 10px;
+  }  
+  .title {
+  font-size: 35px;
+  color: #353535;
+  ;
+  margin-bottom: 10px;
+  }
+  .input-field {
+  width: 250px;
+  height: 40px;
+  background: #f0f0f0;
+  margin: 10px 0;
+  border: 2px solid #879fd1;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+  }
+  .input-fieldSinup{
+      width: 240px;
+      height: 35px;
+      background: #f0f0f0;
+      margin: 10px 0;
+      border: 2px solid #879fd1;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+      
+  
+  }
+  .input-field i {
+  flex: 1;
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+  }
+  .input-field input ,.input-fieldSinup input{
+  flex: 5;
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+  }
+  .btn {
+  width: 140px;
+  height: 30px;
+  border: none;
+  border-radius: 50px;
+  background: #879fd1;
+  color: #353535;
+  font-weight: bold;
+  margin: 10px 0;
+  text-transform: uppercase;
+  cursor: pointer;
+  }
+  .btn:hover {
+  background: #b2b7c4;
+  }
+  #SignupLearner{
+  padding-top: 65px;
+  
+  }
+  a {
+  text-decoration: none;
+  }
+  
+  .panels-container {  /*right text loc*/
+  position: absolute;
+  top: 0;
+  left: 37%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  } 
+  .panel {/*right text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 35%;
+  min-width: 238px;
+  padding: 0 10px;
+  text-align: center;
+  z-index: 6;
+  color: #353535;
+  } 
+  .panel h3 {
+  font-size: 24px;
+  font-weight: 600;
+  } 
+  .panel p {
+  font-size: 15px;
+  padding: 10px 0;
+  }
+  .signin-signup .info_data
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+  .signin-signup .info_data .data{
+    width: 45%;
+  }
+  .select_box{
+    border: none;
+    width: 100%;
+    color: #444;
+    border-radius: 5px;
+    border: 2px solid #7C93C3;
+    text-align: center;
+    background: none;
+    font-weight: bold;
+  }
+  .select_container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 190px;
+    height: 30px;
+    background: #f0f0f0;
+   
+  
+    }
+   
+    .textarea_field textarea {
+    border: 2px solid #7C93C3;
+    border-radius: 5px;
+    color: #444;
+    font-weight: bold;
+    font-size: small;
+    padding: 4px;
+    height: 90px;
+    position: relative;
+    margin-top: 1px;
+    width: 240px;
+    background: #f0f0f0;
+    
+  }
+  .radio_button {
+    background: #DEECFF;
+    border-radius: 20px;
+    width: 75px;
+    height: 27px;
+    padding-left: 4px;
+    padding-top: 4px;
+    display: inline-block;
+    position: relative;
+    left: 8px;
+    font-weight: bold;
+    color: #353535;
+  }
+  .photo {
+  
+    border: 2px solid #7C93C3;
+    border-radius: 5px;
+    padding: 2px;
+    width: 240px;
+    position: relative;
+    height: 35px;
+    color: #444;
+    background: #f0f0f0;
+    font-weight: bold;
+  }
+  #singup-login{
+  font-weight: bold;
+  font-size: medium;
+  color: #353535;
+  text-decoration:underline;
+  }
+  #request-Post-box {
+    /* background-color: #f7f7f7; */
+    border: 1px solid #e0e0e0; 
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto; 
+  
+    margin-bottom: 50px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Radio button styles */
+  #request-Post-box input[type="radio"] {
+    appearance: none;
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #80a5dd;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+  
+  }
+  
+  #request-Post-box input[type="radio"]:checked {
+    background-color: #80a5dd;
+  
+  }
+  
+  /* Textarea styles */
+  #request-Post-box textarea {
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    max-width: 360px;
+    margin-bottom: 10px;
+  }
+  
+  /* Select styles */
+  #request-Post-box select {
+    appearance: none;
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  /* Date input styles */
+  #request-Post-box input{
+    appearance: none;
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    cursor: pointer;
+  
+    margin-bottom: 10px;
+  
+  }
+
+  /* Submit button styles */
+  #request-Post-box input[type="submit"] {
+   
+  background-position: 0%;
+  max-width: 300px;
+  margin: 0 auto; 
+  display: block; 
+  }
+  
+  
+  
+  
+  /* Label styles */
+  #request-Post-box label {
+    margin-top: 5px;
+    margin-bottom: 5px; 
+    display: block;
+    font-weight: bold;
+    font-size: 14px; 
+  }
+  
+  /* Radio button labels styles */
+  #request-Post-box input[type="radio"]+label {
+  
+    display: inline-block;
+    margin-right: 10px;
+  } 
+  
+  /*edit request same as post with diffrent buttons styles*/
+  
+  /* Button container styles the only difference between post req style */
+       
+        #edit-page-buttons {
+            display: flex;
+            justify-content: space-between; /* Align buttons to center left and center right */
+            max-width: 220px; 
+            margin: 10px auto; /* Adjust margin for spacing */
+        }
+  
+        /* Individual button styles for each one  */
+        #edit-page-buttons button {
+            width: 100px;
+            font-size: 12.5px; 
+        }
+  
+  
+        /****************************cancel request page style*************/
+  
+  
+        .Cancel-background-container {
+          /* background-color: rgba(165, 187, 238, 0.5);  */
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+  
+      .ManageCancelBody {
+        background: #fff; /* White background */
+          padding: 30px; 
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 600px;
+      }
+  
+      .ManageCancelBody h3 {
+          margin-bottom: 15px;
+      }
+  
+      .ManageCancelBody h4 {
+          margin-bottom: 25px;
+      }
+  
+      .button-container {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+      }
+  
+      /* Style individual buttons */
+      .ManageCancelBody input[type="submit"] {
+          flex: 1; /* Distribute  space equally */
+          margin: 0 5px; /* Add some margin between buttons */
+          padding: 10px; 
+          border: none; 
+          border-radius: 5px; 
+          background-color: #007bff; 
+          color: #fff; 
+          cursor: pointer; 
+      }
+  
+  
+      /**********************view job details:partner page style**************/
+  
+      #job-request-details {
+        background-color: #f7f7f7;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    #job-request-details h2 {
+        color: #333;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+  
+    #job-request-details p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+  
+    #back-link {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+  
+        #back-link a {
+            color: #919ba7;
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+  
+        #back-link a:hover {
+            color: #4283c8;
+            text-decoration:none;
+        }
+  
+  
+        /*************learner request list*****************/
+  
+        #My-RequestsLearner { 
+          
+          margin: 0% auto;
+          padding: 0;
+          background-color: #ffffff;
+          font-family: sans-serif;
+          display: flex;
+          flex-direction: row;
+          justify-content: center; 
+          align-items: baseline; 
+          width: 100%; 
+          max-width: 2000px; 
+          border-radius: 10px; 
+          box-shadow: 5px 5px 5px 5px rgb(248, 247, 244);
+          
+      }
+  
+  #My-RequestsLearner ul {
+      
+      list-style: none;
+      position: relative;
+      width: 500px;
+      margin: 100px auto 0;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-top: 0;
+      /* position list to the left */
+      margin-left: 5px;
+      padding-left: 5px;
+      /*scrollbar if i make it work  */
+      overflow-y: auto;
+      max-height: 400px;
+  
+    
+  }
+  
+  #My-RequestsLearner ul li {
+      border: 1px #ccc;
+      padding: 10px;
+      margin: 10px 0;
+      transition: background-color 0.3s;
+      text-align: left;
+      border-radius: 10px;
+      box-shadow: 5px 5px 5px 5px rgb(248, 247, 244);
+      display: table-cell;
+  }
+  
+  
+  #My-RequestsLearner ul li:hover {
+      background-color: #f0f0f0;
+  }
+  #My-RequestsLearner h3{
+    /* position list h to the left */
+   
+    margin-left: 150px; /* Adjust the margin value as needed */
+      
+      padding: 10px;
+  
+      
+      
+  }
+  .button-like-link {
+      display: inline-block;
+      padding: 4px 8px;
+      background-color: #c7d3e1;
+      color: #353535;
+      text-decoration: none;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+      font-size: 14px;
+      margin-right: 5px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+      width: 160px;
+      height: 30px;
+  }
+  
+  .button-like-link:hover {
+      background-color: #7C93C3;
+  }
+  
+  /***************job request list:partner*************/
+  
+  #Job-Request-list{ 
+          
+               
+    margin: 8% auto;
+    padding: 0;
+    background-color: #abc8f4;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    max-width: 1000px; 
+    border-radius: 10px; 
+  }
+  
+  #Job-Request-list ul{
+    list-style: none;
+    position:relative;
+    width: 900px;
+    margin: 100px auto 0;
+    padding: 10px;
+    box-sizing:border-box ;
+    margin-top: 0;
+  }
+  
+  #Job-Request-list ul li{
+    display: flex;
+    background: #eceef1;
+    padding: 10px 20px;
+    margin:5px 0;
+    transition: 0.5s;
+    cursor: pointer; /* Making the whole li clickable */
+  }
+  
+  #Job-Request-list h3{
+    text-align: center;
+    margin-top: 20px; 
+    font-size: 24px; 
+    color: #333; 
+    margin-bottom: 0;
+  }
+  
+   #Job-Request-list ul li:hover{
+    transform:scale(1.06) ;  
+    background: #77a8f1;
+  } 
+  
+  #Job-Request-list ul li span img {
+    width: 30px; 
+    height: auto; 
+    margin-right: 10px; 
+  }
+ /* learningreq */
+ #Job-Request-list{ 
+        
+             
+  margin: 8% auto;
+  padding: 0;
+  background-color: #abc8f4;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  max-width: 1000px; 
+  border-radius: 10px; 
+}
+
+#Job-Request-list ul{
+  list-style: none;
+  position:relative;
+  width: 900px;
+  margin: 100px auto 0;
+  padding: 10px;
+  box-sizing:border-box ;
+  margin-top: 0;
+}
+
+#Job-Request-list ul li{
+  display: flex;
+  background: #eceef1;
+  padding: 10px 20px;
+  margin:5px 0;
+  transition: 0.5s;
+  cursor: pointer; /* Making the whole li clickable */
+}
+
+#Job-Request-list h3{
+  text-align: center;
+  margin-top: 20px; 
+  font-size: 24px; 
+  color: #333; 
+  margin-bottom: 0;
+}
+
+/* #Job-Request-list ul li:hover{
+  transform:scale(1.06) ;  
+  background: #77a8f1;
+} */
+
+#Job-Request-list ul li span img {
+  width: 30px; 
+  height: auto; 
+  margin-right: 10px; 
+}
+.button-container5 {
+  display: flex;
+  justify-content: space-between;
+  width: 73%;
+}
+/* View req with their Status  */
+.Offers {
+  height: 30px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 70px;
+}
+.even-row {
+  background-color: white;
+}
+
+.Green {
+  color: rgb(39, 141, 7);
+}
+
+.Red {
+  color: rgb(254, 9, 9);
+}
+
+.Gray {
+  color: rgb(112, 113, 112);
+}
+
+.tableReq {
+  
+  border-spacing: 1px;
+  /* border-collapse: collapse;  */
+  background-color:#c7d3e1 ;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 1300px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  border-style: solid;
+  border: 2px ;
+  text-align: center;
+  border-color: black;
+}
+td , th {
+  width: 10%;
+  
+}
+thead tr {
+  background-color: #7C93C3;
+  height: 60px;
+  font-size: 16px;
+  color: white;
+}
+
+tbody tr {
+  height: 30px;
+  border-bottom: 1px solid;
+}
+.An , .Qu{
+
+font-size: 25px;
+}
+#scroll-div{
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.scrollable-content {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scrollabley {
+  max-height: 450px; /* You can adjust this value as needed */
+  overflow-y: auto;
+}
+.teaching-services {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.teaching-services h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #353535;;
+}
+
+.language-box {
+  display: inline-block;
+  width: 120px; /* Adjust width as needed */
+  height: 135px; /* Adjust height as needed */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-right: 10px; /* Adjust margin between boxes */
+  vertical-align: top;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.language {
+  padding: 10px;
+}
+
+.language h4 {
+  font-size: 16px;
+  color:#353535;;
+}
+.language h5{
+  padding-top: 5px;
+  font-size: 14px;
+  color:#353535;
+}
+
+.language p {
+  font-size: 14px;
+  color: #8e9aaf;
+}
